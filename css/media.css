@@ -7,129 +7,129 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-.header-contact {
-	display: none;
-}
-.header {
-	padding: 15px 0;
-}
-.billbord {
-	padding-top: 110px;
-}
-.title-big {
-    font-size: 40px;
-    line-height: 53px;
-    }
-    .item-billbord {
-    	width: 100%;
-    }
-   .row_billbord .slick-slide {
-   	padding: 0;
-    	width: 350px;
-    }
-    .row_billbord {
-    	margin-right: -15px;
-    }
-    .container {
-    	max-width: 100%;
-    }
+	.header-contact {
+		display: none;
+	}
+	.header {
+		padding: 15px 0;
+	}
+	.billbord {
+		padding-top: 110px;
+	}
+	.title-big {
+		font-size: 40px;
+		line-height: 53px;
+	}
+	.item-billbord {
+		width: 100%;
+	}
+	.row_billbord .slick-slide {
+		padding: 0;
+		width: 350px;
+	}
+	.row_billbord {
+		margin-right: -15px;
+	}
+	.container {
+		max-width: 100%;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-.logo {
-	width: 250px;
-}
-.billbord .logo {
-	margin-bottom: 20px;
-}
-.title-big {
-    font-size: 35px;
-    line-height: 46px;
-}
-.descr-big {
-    font-size: 20px;
-    line-height: 26px;
-}
-.billbord .title-big {
-	margin-bottom: 15px;
-}
-.billbord__buttons {
-	margin-top: 20px;
-	justify-content: space-between;
-}
-.billbord__buttons .btn-main {
-	margin: 0;
-	min-width: initial;
-	width: 49%;
-}
-.btn-main {
-	font-size: 14px;
-    height: 73px;
-    padding: 0px 15px;
-    }
-    .row_billbord {
-    	margin-top: 40px;
-    }
+	.logo {
+		width: 250px;
+	}
+	.billbord .logo {
+		margin-bottom: 20px;
+	}
+	.title-big {
+		font-size: 35px;
+		line-height: 46px;
+	}
+	.descr-big {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.billbord .title-big {
+		margin-bottom: 15px;
+	}
+	.billbord__buttons {
+		margin-top: 20px;
+		justify-content: space-between;
+	}
+	.billbord__buttons .btn-main {
+		margin: 0;
+		min-width: initial;
+		width: 49%;
+	}
+	.btn-main {
+		font-size: 14px;
+		height: 73px;
+		padding: 0px 15px;
+	}
+	.row_billbord {
+		margin-top: 40px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-.descr-logo {
-    max-width: 178px;
-    font-size: 12px;
-    line-height: 16px;
-}
-.phone-main {
-    font-size: 14px;
-    line-height: 20px;
-    }
-    .header-right .link-main {
-    	font-size: 12px;
-    	line-height: 12px;
-    }
-.title-big {
-    font-size: 30px;
-    line-height: 39px;
-}
-.descr-big {
-    font-size: 16px;
-    line-height: 22px;
-}
-.billbord__buttons {
-	flex-direction: column;
-}
-.billbord__buttons .btn-main {
-	width: 100%;
-	padding: 0 50px;
-	margin-top: 15px;
-}
-.row_billbord .slick-slide {
-	width: 280px;
-}
-.item-billbord__title {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    }
-    .item-billbord {
-    	font-size: 12px;
-    	line-height: 18px;
-    }
-    .logo {
-    width: 215px;
-}
-.billbord {
-    padding-top: 95px;
-}
+	.descr-logo {
+		max-width: 178px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.phone-main {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.header-right .link-main {
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.title-big {
+		font-size: 30px;
+		line-height: 39px;
+	}
+	.descr-big {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.billbord__buttons {
+		flex-direction: column;
+	}
+	.billbord__buttons .btn-main {
+		width: 100%;
+		padding: 0 50px;
+		margin-top: 15px;
+	}
+	.row_billbord .slick-slide {
+		width: 280px;
+	}
+	.item-billbord__title {
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 700;
+		margin-bottom: 16px;
+	}
+	.item-billbord {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.logo {
+		width: 215px;
+	}
+	.billbord {
+		padding-top: 95px;
+	}
 }
 @media only screen and (max-width : 340px) {
-.descr-logo {
-    max-width: 162px;
-    font-size: 11px;
-    line-height: 16px;
-}
+	.descr-logo {
+		max-width: 162px;
+		font-size: 11px;
+		line-height: 16px;
+	}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
@@ -159,19 +159,19 @@
 
 }
 
- /* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.container {
-    max-width: 1200px;
-}
+		max-width: 1200px;
+	}
 }
 @media only screen and (min-width : 1410px) {
 	.container {
-    max-width: 1390px;
-}
+		max-width: 1390px;
+	}
 }
 @media (min-width: 1600px) {
 	.container {
-    max-width: 1390px;
-}
+		max-width: 1390px;
+	}
 }

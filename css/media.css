@@ -409,6 +409,7 @@
 		height: 400px;
 	}
 	.sidebar-catalog {
+		margin-bottom: 20px;
 		display: none;
 	}
 	.btn-main_filter {
@@ -441,6 +442,9 @@
 	}
 	.article blockquote {
 		margin-bottom: 20px;
+	}
+	.footer {
+		padding-bottom: 45px;
 	}
 }
 

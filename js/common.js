@@ -165,6 +165,41 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-catalog').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 4,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		touchThreshold: 1000,
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 2,
+			}
+		}
+		]
+	});
+
 	jQuery('.quantity').each(function() {
 		var spinner = jQuery(this),
 		input = spinner.find('input[type="number"]'),
@@ -213,6 +248,65 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 	}
 	$(".input-phone").mask("+7 (999) 999-99-99");
+
+	/*range slider*/
+
+	$(function() {
+		var $range = $(".range-catalog__input"),
+		$from = $(".control-input__from"),
+		$to = $(".control-input__to"),
+		min = 0,
+		max = 10000;
+		$range.ionRangeSlider({
+			type: "double",
+			min: min,
+			max: max,
+			from: 300,
+			to: 10000,
+			prettify_enabled: true,
+			onChange: function(data) {
+				updateValues()
+			}
+		});
+
+
+		$range = $range.data("ionRangeSlider");
+		var updateValues = function() {
+			var res = $range.result;
+			$from.val(res.from, true);
+			$to.val(res.to,true)
+		};
+		$from.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				from: this.value
+			})
+		}).on("blur", updateValues);
+		$to.on("focus", function() {
+			this.value = this.value;
+			this.focus();
+			this.selectionStart = this.value.length
+		}).on("input", function() {
+			$range.update({
+				to: this.value
+			})
+		}).on("blur", updateValues)
+	});
+
+
+	$(".item-filter__head").click(function() {
+			$(this).parent().toggleClass("active");
+			$(this).siblings(".item-filter__content").slideToggle(200);
+		}); 
+
+
+$(".btn-main_filter").click(function(e) {
+	e.preventDefault();
+			$(".sidebar-catalog").slideToggle(200);
+		});
 
 
 	 // стайлер для select

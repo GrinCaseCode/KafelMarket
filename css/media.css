@@ -75,6 +75,16 @@
 	.block-form {
     padding: 35px 116px;
 }
+.discussion-form {
+    padding: 62px 45px;
+    }
+    .block-discussion__left {
+    max-width: 483px;
+    margin-left: 29px;
+}
+.about-text {
+    padding: 42px 50px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -216,6 +226,22 @@
     }
     .block-form {
     padding: 35px 27px;
+}
+.about-unit {
+	padding: 25px;
+}
+.about-unit .title-middle {
+	font-size: 21px;
+}
+.block-discussion__left {
+    max-width: 410px;
+    margin-left: 19px;
+}
+.discussion-form {
+    padding: 34px 15px;
+}
+.discussion-form .checkbox-wrap .checkbox {
+	white-space: normal;
 }
 }
 
@@ -471,6 +497,30 @@
 	.nav-page {
 		display: none;	
 	}
+	.about-text {
+		padding: 35px;
+		min-height: initial;
+	}
+	.about-text p:last-child {
+		margin: 0;
+	}
+	.slider-gallery {
+		padding-bottom: 30px;
+	}
+	.block-discussion {
+		background-position: left;
+	}
+	.block-discussion__left {
+		padding: 20px 30px;
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.block-discussion__left li {
+		margin-bottom: 20px;
+	}
+	.discussion-form {
+		padding: 35px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -674,6 +724,22 @@ blockquote.special {
 .company {
 	padding-bottom: 60px;
 }
+.about-page .title-page {
+	margin-bottom: 20px;
+}
+.about-unit {
+	margin-bottom: 1px;
+	min-height: initial;
+}
+.about-text {
+	padding: 25px;
+}
+.row_about {
+	margin-bottom: 30px;
+}
+.block-discussion__left .title-middle {
+	margin-bottom: 25px;
+}
 }
 @media only screen and (max-width : 575px) {
 	.item-news__image {
@@ -830,6 +896,38 @@ blockquote.special {
 }
 .block-form {
     padding: 30px 15px;
+}
+.about-unit .title-about {
+    padding-bottom: 15px;
+    margin-bottom: 23px;
+    }
+    .about-unit .title-middle {
+    font-size: 19px;
+}
+.title-about {
+	font-size: 37px;
+}
+.title-about span {
+    font-size: 20px;
+}
+.slider-gallery__item {
+    height: 240px;
+}
+.title-middle {
+    font-size: 19px;
+}
+.block-discussion__left {
+	padding: 20px;
+}
+.discussion-form {
+	padding: 20px;
+}
+.button-wrap {
+	padding-top: 5px;
+}
+.about-page {
+	padding-bottom: 40px;
+	font-size: 14px;
 }
 }
 @media only screen and (max-width : 340px) {

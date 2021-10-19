@@ -235,6 +235,41 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-gallery').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 3,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		touchThreshold: 1000,
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 1,
+			}
+		}
+		]
+	});
+
 	jQuery('.quantity').each(function() {
 		var spinner = jQuery(this),
 		input = spinner.find('input[type="number"]'),

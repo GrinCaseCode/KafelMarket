@@ -69,6 +69,12 @@
 		max-width: 33%;
 		padding: 30px;
 	}
+	.company .col-lg-9 {
+		padding-left: 15px;
+	}
+	.block-form {
+    padding: 35px 116px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -201,6 +207,16 @@
 	.article h6 {
 		max-width: 100% !important;
 	}
+	.video-block__text {
+    font-size: 16px;
+    top: 18px;
+}
+.slider-images__item {
+    height: 270px;
+    }
+    .block-form {
+    padding: 35px 27px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -446,6 +462,15 @@
 	.footer {
 		padding-bottom: 45px;
 	}
+	.slider-images {
+		padding-bottom: 30px;
+	}
+	.row_text > div {
+		margin-bottom: 20px;
+	}
+	.nav-page {
+		display: none;	
+	}
 }
 
 /* Small Devices, Tablets */
@@ -597,6 +622,58 @@
 	.article h1 + img {
 		max-width: 100%;
 	}
+	/*youtube video inside fancybox*/
+      .fancybox-type-iframe .fancybox-inner {
+    height: auto !important;
+}
+    .fancybox-type-iframe iframe{
+  width: calc(100vw - 40px);
+  height: calc(100vw/1.77);
+}
+.video-block__text {
+	display: none;
+}
+.video-block__play {
+	width: 60px;
+	height: 60px;
+}
+.play-icon {
+	font-size: 16px;
+}
+.video-block {
+	margin-bottom: 20px;
+}
+.company h2 {
+    margin-bottom: 13px;
+}
+.company blockquote {
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
+.slider-images {
+	margin-bottom: 35px;
+}
+.company h5 {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    }
+    .company p, .company .col-lg-9 li {
+    margin-bottom: 15px;
+}
+blockquote.special {
+	font-size: 15px;
+}
+.block-form__bottom {
+	flex-direction: column;
+	text-align: center;
+}
+.block-form__bottom .checkbox {
+	margin-top: 15px;
+}
+.company {
+	padding-bottom: 60px;
+}
 }
 @media only screen and (max-width : 575px) {
 	.item-news__image {
@@ -737,6 +814,22 @@
 .article blockquote {
 	padding: 20px;
 	margin-bottom: 15px;
+}
+.company {
+    font-size: 14px;
+    padding-bottom: 50px;
+    }
+    .slider-images__item {
+    height: 210px;
+}
+ .slider-images {
+ 	margin-bottom: 25px;
+ }
+ .title-page {
+    font-size: 23px;
+}
+.block-form {
+    padding: 30px 15px;
 }
 }
 @media only screen and (max-width : 340px) {
